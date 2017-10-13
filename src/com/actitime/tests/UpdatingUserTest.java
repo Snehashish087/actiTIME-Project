@@ -109,10 +109,11 @@ public class UpdatingUserTest extends BaseTest
 				//Click on the User
 				String UsersName=ExcelData.Data(path, "Sheet3", 1, 1);
 				obj3.editUser(UsersName);
-				//Update the Users FirstName
+				//Clear the first name
 				obj3.clearFirstName();
-				
+				//Get the updated name from the excel
 				String UserFName=ExcelData.Data(path, "Sheet3", 2, 1);
+				//Enter the updated Firstname
 				obj3.enterUserFirstName(UserFName);
 				obj3.clearLastName();
 				String UserLName=ExcelData.Data(path, "Sheet3", 2, 2);

@@ -21,6 +21,10 @@ public class EnterTimeTrackPage extends BasePage
 	private WebElement BuildNumber;
 	@FindBy (xpath="//a[@class='content users']//div[.='USERS']")
 	private WebElement Users;
+	@FindBy (xpath="//a[@class='userProfileLink username']")
+	private WebElement UserLoginName;
+	@FindBy (xpath="//div[@class='startExploringLink']")
+	private WebElement StartExploringActiTimeButton;
 	
 	
 	
@@ -65,6 +69,27 @@ public class EnterTimeTrackPage extends BasePage
 	public void clickOnUsers()
 	{
 		Users.click();
+	}
+	
+	public void verifyLoginUserName(String ExpectedName)
+	{
+		String ActualName=UserLoginName.getText();
+		if(ActualName.contains(ExpectedName))
+		{
+			Reporter.log("The login UserName is matching with the expected name",true);
+		}
+		else
+		{
+			Reporter.log("The login username is not matching with the expected name",true);
+			Assert.fail();
+		}
+		
+		
+	}
+	
+	public void clickOnExploreActitimeButton()
+	{
+		StartExploringActiTimeButton.click();
 	}
 	
 	

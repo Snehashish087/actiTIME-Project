@@ -61,6 +61,10 @@ public class UserListPage extends BasePage
 	private WebElement UserDetails;
 	@FindBy (xpath="//span[.='Save Changes']")
 	private WebElement SavesChanges;
+	@FindBy (xpath="//span[contains(text(),'There are no users')]")
+	private WebElement NoUsersDisplayMessage;
+	@FindBy (xpath="//button[contains(text(),'Delete User')]")
+	private WebElement UserDeleteButton;
 	
 	
 	
@@ -241,10 +245,51 @@ public class UserListPage extends BasePage
 		}
 		else
 		{
-			Reporter.log("Strings are not matching");
+			Reporter.log("Strings are not matching",true);
 			Assert.fail();
 		}
 	
+	}
+	
+	
+	public void searchVerifyAndDelete(String UserName)
+	{
+		UserSearchFilter.sendKeys(UserName);
+		UserSearchFilter.sendKeys(Keys.ENTER);
+		GenericUtils.threadSleep(5000);
+	/*	String NoUsers=NoUsersDisplayMessage.getText();
+	if(NoUsers.contains("There are no users with enabled access found"))
+		{
+			Reporter.log("No such User present",true);
+			Assert.fail();
+		}
+		else*/
+		{
+			UserDetails.click();
+			GenericUtils.threadSleep(5000);
+			UserDeleteButton.click();
+			GenericUtils.acceptJavascriptPopup();
+			GenericUtils.threadSleep(5000);
+			UserSearchFilter.clear();
+			GenericUtils.threadSleep(3000);
+			UserSearchFilter.sendKeys(UserName);
+			UserSearchFilter.sendKeys(Keys.ENTER);
+			String NoUser=NoUsersDisplayMessage.getText();
+			GenericUtils.threadSleep(3000);
+			if(NoUser.contains("There are no users with enabled access found"))
+			{
+				Reporter.log("Succesfully deleted the user",true);
+			}
+			else
+			{
+				Reporter.log("The user could not be deleted",true);
+				Assert.fail();
+			}
+			//GenericUtils.threadSleep(3000);
+		}
+		
+		
+		
 	}
 
 }

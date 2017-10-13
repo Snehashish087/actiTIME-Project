@@ -2,13 +2,20 @@ package com.actitime.generic;
 
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileOutputStream;
 
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.ss.usermodel.Sheet;
+import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
 
 public class ExcelData 
 {
 	public static String Data(String pathname,String sheet,int rn, int cn)
 	{
+
+			
 		try
 		{
 			FileInputStream fis=new FileInputStream(new File(pathname));
@@ -50,6 +57,28 @@ public class ExcelData
 		}
 		
 	}
+	
+	public static void setCellData(String pathname,String Sheet,int rownum, int cellnum, String Result,  int RowNum, int ColNum) 
+	{
+		 
+			try
+			{
+				FileOutputStream fos=new FileOutputStream(new File(pathname));
+				Workbook wb=WorkbookFactory.create(new File(pathname));
+				Sheet sh=wb.getSheet(Sheet);
+				Row rn=sh.getRow(rownum);
+				Cell cl=rn.getCell(cellnum);
+				
+				
+			}
+			catch (Exception e)
+			{
+				e.getMessage();
+			}
+				
+
+	}
+
 
 
 }
