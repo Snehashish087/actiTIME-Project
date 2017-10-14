@@ -17,12 +17,12 @@ public class RegisteredUserTest extends BaseTest
 		LoginPage obj1=new LoginPage(driver);
 		
 		// Excess the testdata for valid Username
-				String un=ExcelData.Data(path, "Sheet1", 1, 0);
+				String un=ExcelData.Data(path, "Sheet1", 1, 2);
 				obj1.enterUsername(un);
 				
 				
 				// Excess the testdata for valid password
-				String pwd=ExcelData.Data(path, "Sheet1", 1, 1);
+				String pwd=ExcelData.Data(path, "Sheet1", 1, 3);
 				obj1.enterPassword(pwd);
 				
 				
@@ -51,23 +51,23 @@ public class RegisteredUserTest extends BaseTest
 					e.printStackTrace();
 				}
 				//Enter FirstName
-				String UserFName=ExcelData.Data(path, "Sheet3", 1, 1);
+				String UserFName=ExcelData.Data(path, "Sheet3", 2, 3);
 				obj3.enterUserFirstName(UserFName);
 				//Enter LastName
-				String UserLName=ExcelData.Data(path, "Sheet3", 1, 2);
+				String UserLName=ExcelData.Data(path, "Sheet3", 2, 4);
 				obj3.enterUserLastName(UserLName);
 				// Enter user's mailID
-				String UserEmail=ExcelData.Data(path, "Sheet3", 1, 3);
+				String UserEmail=ExcelData.Data(path, "Sheet3", 2, 5);
 				obj3.enterUserEmail(UserEmail);
 				// Enter User's Username
-				String UsersUserName=ExcelData.Data(path, "Sheet3", 1, 4);
+				String UsersUserName=ExcelData.Data(path, "Sheet3", 2, 6);
 				obj3.enterUsername(UsersUserName);
 				// Enter User's Password
-				String UserPassword=ExcelData.Data(path, "Sheet3", 1, 5);
+				String UserPassword=ExcelData.Data(path, "Sheet3", 2, 7);
 				obj3.enterUserPassword(UserPassword);
 				
 				//Enter re-Retype Password
-				String RetypePwd=ExcelData.Data(path, "Sheet3", 1, 6);
+				String RetypePwd=ExcelData.Data(path, "Sheet3", 2, 8);
 				obj3.enterRetypePassword(RetypePwd);
 				
 				
@@ -92,10 +92,10 @@ public class RegisteredUserTest extends BaseTest
 				GenericUtils.acceptJavascriptPopup();
 				GenericUtils.threadSleep(3000);
 			//Check for the users Name in the Table for verifying its presence	
-				String UsersName=ExcelData.Data(path, "Sheet3", 1, 1);
+				String UsersName=ExcelData.Data(path, "Sheet3", 2, 3);
 				obj3.enterUsersNameSearchBox(UsersName);
 				GenericUtils.threadSleep(5000);
-				String UsersNameSearch=ExcelData.Data(path, "Sheet3", 1, 1);
+				String UsersNameSearch=ExcelData.Data(path, "Sheet3", 2, 3);
 				obj3.verifyUsersName(UsersNameSearch);
 				
 				
@@ -103,3 +103,5 @@ public class RegisteredUserTest extends BaseTest
 	}
 
 }
+
+//This has being synched with the excel Data

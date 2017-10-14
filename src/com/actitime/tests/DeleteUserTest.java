@@ -19,12 +19,12 @@ public class DeleteUserTest extends BaseTest
 			
 			
 			// Excess the testdata for valid Username
-			String un=ExcelData.Data(path, "Sheet1", 1, 0);
+			String un=ExcelData.Data(path, "Sheet1", 1, 2);
 			loginPage.enterUsername(un);
 			
 			
 			// Excess the testdata for valid password
-			String pwd=ExcelData.Data(path, "Sheet1", 1, 1);
+			String pwd=ExcelData.Data(path, "Sheet1", 1, 3);
 			loginPage.enterPassword(pwd);
 			
 			
@@ -39,12 +39,12 @@ public class DeleteUserTest extends BaseTest
 			UserListPage userListPage=new UserListPage(driver);
 			
 			//Search for the existing user from the list
-			String ExistingUser=ExcelData.Data(path, "Sheet3", 3, 1);
+			String ExistingUser=ExcelData.Data(path, "Sheet3", 6, 3);
 			//Edit the user from the master Grid by searching the existing User
 		//	userListPage.editUser(ExistingUser);
 			userListPage.searchVerifyAndDelete(ExistingUser);
 			
-			
+		
 			
 			
 			
@@ -52,3 +52,6 @@ public class DeleteUserTest extends BaseTest
 
 	}
 }
+
+
+//This test class has been synced with test Data file.

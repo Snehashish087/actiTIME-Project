@@ -25,12 +25,12 @@ public class LoginUserTest extends BaseTest
 	
 	
 	// Excess the testdata for valid Username
-	String un=ExcelData.Data(path, "Sheet1", 1, 0);
+	String un=ExcelData.Data(path, "Sheet1", 6, 2);
 	loginPage.enterUsername(un);
 	
 	
 	// Excess the testdata for valid password
-	String pwd=ExcelData.Data(path, "Sheet1", 1, 1);
+	String pwd=ExcelData.Data(path, "Sheet1", 6, 3);
 	loginPage.enterPassword(pwd);
 	
 	
@@ -58,23 +58,23 @@ public class LoginUserTest extends BaseTest
 		e.printStackTrace();
 	}
 	//Enter FirstName
-	String UserFName=ExcelData.Data(path, "Sheet3", 1, 1);
+	String UserFName=ExcelData.Data(path, "Sheet3", 7, 3);
 	userListPage.enterUserFirstName(UserFName);
 	//Enter LastName
-	String UserLName=ExcelData.Data(path, "Sheet3", 1, 2);
+	String UserLName=ExcelData.Data(path, "Sheet3", 7, 4);
 	userListPage.enterUserLastName(UserLName);
 	// Enter user's mailID
-	String UserEmail=ExcelData.Data(path, "Sheet3", 1, 3);
+	String UserEmail=ExcelData.Data(path, "Sheet3", 7, 5);
 	userListPage.enterUserEmail(UserEmail);
 	// Enter User's Username
-	String UsersUserName=ExcelData.Data(path, "Sheet3", 1, 4);
+	String UsersUserName=ExcelData.Data(path, "Sheet3", 7, 6);
 	userListPage.enterUsername(UsersUserName);
 	// Enter User's Password
-	String UserPassword=ExcelData.Data(path, "Sheet3", 1, 5);
+	String UserPassword=ExcelData.Data(path, "Sheet3", 7, 7);
 	userListPage.enterUserPassword(UserPassword);
 	
 	//Enter re-Retype Password
-	String RetypePwd=ExcelData.Data(path, "Sheet3", 1, 6);
+	String RetypePwd=ExcelData.Data(path, "Sheet3", 7, 8);
 	userListPage.enterRetypePassword(RetypePwd);
 	
 	//ScrollUsingElement
@@ -94,10 +94,10 @@ public class LoginUserTest extends BaseTest
 	enterTimeTrackPage.clickOnLogout();
 	
 	//Fetch the UserName for the created User
-	String NewUserName=ExcelData.Data(path, "Sheet3", 1, 4);
+	String NewUserName=ExcelData.Data(path, "Sheet3", 8, 6);
 	loginPage.enterUsername(NewUserName);
 	//Fetch the password for the created user
-	String NewPassword=ExcelData.Data(path, "Sheet3", 1, 5);
+	String NewPassword=ExcelData.Data(path, "Sheet3", 8, 7);
 	loginPage.enterPassword(NewPassword);
 	//Click on Login
 	loginPage.clickLogin();

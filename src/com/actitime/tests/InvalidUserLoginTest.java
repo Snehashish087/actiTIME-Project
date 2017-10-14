@@ -18,12 +18,12 @@ public class InvalidUserLoginTest extends BaseTest
 		LoginPage loginPage=new LoginPage(driver);
 		
 		// Excess the testdata for valid Username
-				String un=ExcelData.Data(path, "Sheet1", 1, 0);
+				String un=ExcelData.Data(path, "Sheet1", 7, 1);
 				loginPage.enterUsername(un);
 				
 				
 				// Excess the testdata for valid password
-				String pwd=ExcelData.Data(path, "Sheet1", 1, 1);
+				String pwd=ExcelData.Data(path, "Sheet1", 7, 2);
 				loginPage.enterPassword(pwd);
 				
 				
@@ -37,17 +37,17 @@ public class InvalidUserLoginTest extends BaseTest
 				//Instance for UserListPage
 				UserListPage userListPage=new UserListPage(BaseTest.driver);
 				//Click on the User
-				String UsersName=ExcelData.Data(path, "Sheet3", 1, 1);
+				String UsersName=ExcelData.Data(path, "Sheet3", 9, 6);
 				userListPage.editUser(UsersName);
 				
 				//Update the Password field
-				String UserPassword=ExcelData.Data(path, "Sheet3", 2, 5);
+				String UserPassword=ExcelData.Data(path, "Sheet3", 9, 7);
 				//userListPage.clearPassword();
 				userListPage.enterUserPassword(UserPassword);
 				
 				
 				//update retype Password field
-				String RetypePassword=ExcelData.Data(path, "Sheet3", 2, 6);
+				String RetypePassword=ExcelData.Data(path, "Sheet3", 9, 8);
 				//userListPage.clearRetypePassword();
 				userListPage.enterRetypePassword(RetypePassword);
 				
@@ -64,7 +64,7 @@ public class InvalidUserLoginTest extends BaseTest
 				loginPage.enterUsername(UsersName);
 				
 				//Enter Invalid Password
-				String InvalidPassword=ExcelData.Data(path, "Sheet3", 1, 5);
+				String InvalidPassword=ExcelData.Data(path, "Sheet3", 10, 7);
 				
 				loginPage.enterPassword(InvalidPassword);
 				//Click on Login Button
