@@ -118,3 +118,4 @@ public class LoginUserTest extends BaseTest
 	
 	}
 }
+//Synched with excel data
