@@ -1,64 +1,235 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+<testng-results skipped="0" failed="1" ignored="1" total="11" passed="9">
   <reporter-output>
+    <line>
+      <![CDATA[Title is matching: actiTIME - Login]]>
+    </line>
+    <line>
+      <![CDATA[Title is matching: actiTIME - Enter Time-Track]]>
+    </line>
+    <line>
+      <![CDATA[Username exist in the Table]]>
+    </line>
+    <line>
+      <![CDATA[Title is matching: actiTIME - Login]]>
+    </line>
+    <line>
+      <![CDATA[Title is matching: actiTIME - Enter Time-Track]]>
+    </line>
+    <line>
+      <![CDATA[Both actual and expected name matches]]>
+    </line>
+    <line>
+      <![CDATA[Title is matching: actiTIME - Login]]>
+    </line>
+    <line>
+      <![CDATA[Title is matching: actiTIME - Enter Time-Track]]>
+    </line>
+    <line>
+      <![CDATA[Element is matching: Username or Password is invalid. Please try again.]]>
+    </line>
+    <line>
+      <![CDATA[Element is not matching]]>
+    </line>
+    <line>
+      <![CDATA[Title is matching: actiTIME - Login]]>
+    </line>
+    <line>
+      <![CDATA[Title is matching: actiTIME - Enter Time-Track]]>
+    </line>
+    <line>
+      <![CDATA[Succesfully deleted the user]]>
+    </line>
+    <line>
+      <![CDATA[Supriya Watson]]>
+    </line>
+    <line>
+      <![CDATA[The login UserName is matching with the expected name]]>
+    </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="142985" started-at="2017-10-13T13:54:47Z" finished-at="2017-10-13T13:57:10Z">
+  <suite name="Suite" duration-ms="713342" started-at="2017-10-19T09:37:30Z" finished-at="2017-10-19T09:49:23Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="142985" started-at="2017-10-13T13:54:47Z" finished-at="2017-10-13T13:57:10Z">
-      <class name="com.actitime.tests.InvalidUserLoginTest">
-        <test-method status="PASS" signature="preCondition()[pri:0, instance:com.actitime.tests.InvalidUserLoginTest@39aeed2f]" name="preCondition" is-config="true" duration-ms="139758" started-at="2017-10-13T19:24:47Z" finished-at="2017-10-13T19:27:06Z">
+    <test name="Test" duration-ms="713342" started-at="2017-10-19T09:37:30Z" finished-at="2017-10-19T09:49:23Z">
+      <class name="com.actitime.tests.LoginUserTest">
+        <test-method status="PASS" signature="preCondition()[pri:0, instance:com.actitime.tests.LoginUserTest@224edc67]" name="preCondition" is-config="true" duration-ms="14340" started-at="2017-10-19T15:18:09Z" finished-at="2017-10-19T15:18:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- preCondition -->
-        <test-method status="FAIL" signature="testwithInvalidUserPassword()[pri:0, instance:com.actitime.tests.InvalidUserLoginTest@39aeed2f]" name="testwithInvalidUserPassword" duration-ms="1160" started-at="2017-10-13T19:27:06Z" finished-at="2017-10-13T19:27:08Z">
-          <exception class="org.openqa.selenium.NoSuchWindowException">
+        <test-method status="PASS" signature="testLoginUserUpdate()[pri:0, instance:com.actitime.tests.LoginUserTest@224edc67]" name="testLoginUserUpdate" duration-ms="58114" started-at="2017-10-19T15:18:23Z" finished-at="2017-10-19T15:19:21Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Supriya Watson]]>
+            </line>
+            <line>
+              <![CDATA[The login UserName is matching with the expected name]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testLoginUserUpdate -->
+        <test-method status="PASS" signature="postCondition()[pri:0, instance:com.actitime.tests.LoginUserTest@224edc67]" name="postCondition" is-config="true" duration-ms="2111" started-at="2017-10-19T15:19:21Z" finished-at="2017-10-19T15:19:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+      </class> <!-- com.actitime.tests.LoginUserTest -->
+      <class name="com.actitime.tests.DeleteUserTest">
+        <test-method status="PASS" signature="preCondition()[pri:0, instance:com.actitime.tests.DeleteUserTest@26be92ad]" name="preCondition" is-config="true" duration-ms="16173" started-at="2017-10-19T15:16:03Z" finished-at="2017-10-19T15:16:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method status="PASS" signature="testValidLogin()[pri:0, instance:com.actitime.tests.DeleteUserTest@26be92ad]" name="testValidLogin" duration-ms="47814" started-at="2017-10-19T15:16:19Z" finished-at="2017-10-19T15:17:07Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Title is matching: actiTIME - Login]]>
+            </line>
+            <line>
+              <![CDATA[Title is matching: actiTIME - Enter Time-Track]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testValidLogin -->
+        <test-method status="PASS" signature="postCondition()[pri:0, instance:com.actitime.tests.DeleteUserTest@26be92ad]" name="postCondition" is-config="true" duration-ms="2111" started-at="2017-10-19T15:17:07Z" finished-at="2017-10-19T15:17:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+        <test-method status="PASS" signature="preCondition()[pri:0, instance:com.actitime.tests.DeleteUserTest@26be92ad]" name="preCondition" is-config="true" duration-ms="15540" started-at="2017-10-19T15:17:09Z" finished-at="2017-10-19T15:17:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method status="PASS" signature="testDeletingTheExistingUser()[pri:0, instance:com.actitime.tests.DeleteUserTest@26be92ad]" name="testDeletingTheExistingUser" duration-ms="41823" started-at="2017-10-19T15:17:25Z" depends-on-methods="com.actitime.tests.DeleteUserTest.testValidLogin" finished-at="2017-10-19T15:18:06Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Succesfully deleted the user]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testDeletingTheExistingUser -->
+        <test-method status="PASS" signature="postCondition()[pri:0, instance:com.actitime.tests.DeleteUserTest@26be92ad]" name="postCondition" is-config="true" duration-ms="2101" started-at="2017-10-19T15:18:06Z" finished-at="2017-10-19T15:18:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+      </class> <!-- com.actitime.tests.DeleteUserTest -->
+      <class name="com.actitime.tests.UpdatingUserTest">
+        <test-method status="PASS" signature="preCondition()[pri:0, instance:com.actitime.tests.UpdatingUserTest@2b98378d]" name="preCondition" is-config="true" duration-ms="60675" started-at="2017-10-19T15:10:06Z" finished-at="2017-10-19T15:11:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method status="PASS" signature="testUserCreation()[pri:0, instance:com.actitime.tests.UpdatingUserTest@2b98378d]" name="testUserCreation" duration-ms="42031" started-at="2017-10-19T15:11:06Z" finished-at="2017-10-19T15:11:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUserCreation -->
+        <test-method status="PASS" signature="postCondition()[pri:0, instance:com.actitime.tests.UpdatingUserTest@2b98378d]" name="postCondition" is-config="true" duration-ms="2122" started-at="2017-10-19T15:11:48Z" finished-at="2017-10-19T15:11:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+        <test-method status="PASS" signature="preCondition()[pri:0, instance:com.actitime.tests.UpdatingUserTest@2b98378d]" name="preCondition" is-config="true" duration-ms="14129" started-at="2017-10-19T15:11:50Z" finished-at="2017-10-19T15:12:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method status="PASS" signature="testUpdateUserDetails()[pri:0, instance:com.actitime.tests.UpdatingUserTest@2b98378d]" name="testUpdateUserDetails" duration-ms="48177" started-at="2017-10-19T15:12:05Z" depends-on-methods="com.actitime.tests.UpdatingUserTest.testUserCreation" finished-at="2017-10-19T15:12:53Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Both actual and expected name matches]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testUpdateUserDetails -->
+        <test-method status="PASS" signature="postCondition()[pri:0, instance:com.actitime.tests.UpdatingUserTest@2b98378d]" name="postCondition" is-config="true" duration-ms="2102" started-at="2017-10-19T15:12:53Z" finished-at="2017-10-19T15:12:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+      </class> <!-- com.actitime.tests.UpdatingUserTest -->
+      <class name="com.actitime.tests.RegisteredUserTest">
+        <test-method status="PASS" signature="preCondition()[pri:0, instance:com.actitime.tests.RegisteredUserTest@4b9e13df]" name="preCondition" is-config="true" duration-ms="19847" started-at="2017-10-19T15:08:56Z" finished-at="2017-10-19T15:09:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method status="PASS" signature="testValidLogin()[pri:0, instance:com.actitime.tests.RegisteredUserTest@4b9e13df]" name="testValidLogin" duration-ms="47489" started-at="2017-10-19T15:09:16Z" finished-at="2017-10-19T15:10:04Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Title is matching: actiTIME - Login]]>
+            </line>
+            <line>
+              <![CDATA[Title is matching: actiTIME - Enter Time-Track]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testValidLogin -->
+        <test-method status="PASS" signature="postCondition()[pri:0, instance:com.actitime.tests.RegisteredUserTest@4b9e13df]" name="postCondition" is-config="true" duration-ms="2142" started-at="2017-10-19T15:10:04Z" finished-at="2017-10-19T15:10:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+      </class> <!-- com.actitime.tests.RegisteredUserTest -->
+      <class name="com.actitime.tests.CreateUserTest">
+        <test-method status="PASS" signature="preCondition()[pri:0, instance:com.actitime.tests.CreateUserTest@cb5822]" name="preCondition" is-config="true" duration-ms="27014" started-at="2017-10-19T15:07:30Z" finished-at="2017-10-19T15:07:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method status="PASS" signature="testValidLogin()[pri:0, instance:com.actitime.tests.CreateUserTest@cb5822]" name="testValidLogin" duration-ms="56960" started-at="2017-10-19T15:07:57Z" finished-at="2017-10-19T15:08:54Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Title is matching: actiTIME - Login]]>
+            </line>
+            <line>
+              <![CDATA[Title is matching: actiTIME - Enter Time-Track]]>
+            </line>
+            <line>
+              <![CDATA[Username exist in the Table]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testValidLogin -->
+        <test-method status="PASS" signature="postCondition()[pri:0, instance:com.actitime.tests.CreateUserTest@cb5822]" name="postCondition" is-config="true" duration-ms="2330" started-at="2017-10-19T15:08:54Z" finished-at="2017-10-19T15:08:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+      </class> <!-- com.actitime.tests.CreateUserTest -->
+      <class name="com.actitime.tests.InvalidUserLoginTest">
+        <test-method status="PASS" signature="preCondition()[pri:0, instance:com.actitime.tests.InvalidUserLoginTest@475530b9]" name="preCondition" is-config="true" duration-ms="20374" started-at="2017-10-19T15:12:55Z" finished-at="2017-10-19T15:13:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method status="PASS" signature="testValidLogin()[pri:0, instance:com.actitime.tests.InvalidUserLoginTest@475530b9]" name="testValidLogin" duration-ms="49481" started-at="2017-10-19T15:13:15Z" finished-at="2017-10-19T15:14:05Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Title is matching: actiTIME - Login]]>
+            </line>
+            <line>
+              <![CDATA[Title is matching: actiTIME - Enter Time-Track]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testValidLogin -->
+        <test-method status="PASS" signature="postCondition()[pri:0, instance:com.actitime.tests.InvalidUserLoginTest@475530b9]" name="postCondition" is-config="true" duration-ms="2103" started-at="2017-10-19T15:14:05Z" finished-at="2017-10-19T15:14:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+        <test-method status="PASS" signature="preCondition()[pri:0, instance:com.actitime.tests.InvalidUserLoginTest@475530b9]" name="preCondition" is-config="true" duration-ms="13653" started-at="2017-10-19T15:14:07Z" finished-at="2017-10-19T15:14:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method status="PASS" signature="testwithInvalidUserPassword()[pri:0, instance:com.actitime.tests.InvalidUserLoginTest@475530b9]" name="testwithInvalidUserPassword" duration-ms="40618" started-at="2017-10-19T15:14:21Z" finished-at="2017-10-19T15:15:01Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Element is matching: Username or Password is invalid. Please try again.]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testwithInvalidUserPassword -->
+        <test-method status="PASS" signature="postCondition()[pri:0, instance:com.actitime.tests.InvalidUserLoginTest@475530b9]" name="postCondition" is-config="true" duration-ms="2110" started-at="2017-10-19T15:15:01Z" finished-at="2017-10-19T15:15:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+      </class> <!-- com.actitime.tests.InvalidUserLoginTest -->
+      <class name="com.actitime.tests.UserNavigationTest">
+        <test-method status="PASS" signature="preCondition()[pri:0, instance:com.actitime.tests.UserNavigationTest@1d057a39]" name="preCondition" is-config="true" duration-ms="14923" started-at="2017-10-19T15:15:03Z" finished-at="2017-10-19T15:15:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method status="FAIL" signature="testUserPageNavigation()[pri:0, instance:com.actitime.tests.UserNavigationTest@1d057a39]" name="testUserPageNavigation" duration-ms="42700" started-at="2017-10-19T15:15:18Z" finished-at="2017-10-19T15:16:01Z">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=61.0.3163.100)
-  (Driver info: chromedriver=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T16:15:40.131Z'
-System info: host: 'LAPTOP-S0T7N613', ip: '192.168.137.219', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a), userDataDir=C:\Users\SNEHAS~1\AppData\Local\Temp\scoped_dir20420_2682}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=61.0.3163.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 3299a61b31939ea73b5348ea12bcf1e3
-*** Element info: {Using=id, value=username}]]>
+              <![CDATA[null]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=61.0.3163.100)
-  (Driver info: chromedriver=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T16:15:40.131Z'
-System info: host: 'LAPTOP-S0T7N613', ip: '192.168.137.219', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a), userDataDir=C:\Users\SNEHAS~1\AppData\Local\Temp\scoped_dir20420_2682}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=61.0.3163.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 3299a61b31939ea73b5348ea12bcf1e3
-*** Element info: {Using=id, value=username}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:402)
-	at org.openqa.selenium.By$ById.findElement(By.java:218)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy9.sendKeys(Unknown Source)
-	at com.actitime.pages.LoginPage.enterUsername(LoginPage.java:36)
-	at com.actitime.tests.InvalidUserLoginTest.testwithInvalidUserPassword(InvalidUserLoginTest.java:22)
+              <![CDATA[java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.fail(Assert.java:100)
+	at com.actitime.generic.BasePage.verifyElement(BasePage.java:46)
+	at com.actitime.pages.UserListPage.verifyExistingUserMessage(UserListPage.java:197)
+	at com.actitime.tests.UserNavigationTest.testUserPageNavigation(UserNavigationTest.java:86)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -86,82 +257,18 @@ Session ID: 3299a61b31939ea73b5348ea12bcf1e3
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
+            <line>
+              <![CDATA[Element is not matching]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- testwithInvalidUserPassword -->
-        <test-method status="FAIL" signature="postCondition()[pri:0, instance:com.actitime.tests.InvalidUserLoginTest@39aeed2f]" name="postCondition" is-config="true" duration-ms="2020" started-at="2017-10-13T19:27:08Z" finished-at="2017-10-13T19:27:10Z">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[chrome not reachable
-  (Session info: chrome=61.0.3163.100)
-  (Driver info: chromedriver=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T16:15:40.131Z'
-System info: host: 'LAPTOP-S0T7N613', ip: '192.168.137.219', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a), userDataDir=C:\Users\SNEHAS~1\AppData\Local\Temp\scoped_dir20420_2682}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=61.0.3163.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 3299a61b31939ea73b5348ea12bcf1e3]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: chrome not reachable
-  (Session info: chrome=61.0.3163.100)
-  (Driver info: chromedriver=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T16:15:40.131Z'
-System info: host: 'LAPTOP-S0T7N613', ip: '192.168.137.219', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a), userDataDir=C:\Users\SNEHAS~1\AppData\Local\Temp\scoped_dir20420_2682}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=61.0.3163.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 3299a61b31939ea73b5348ea12bcf1e3
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:643)
-	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:472)
-	at com.actitime.generic.BaseTest.postCondition(BaseTest.java:29)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:731)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:877)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1201)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:776)
-	at org.testng.TestRunner.run(TestRunner.java:634)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:425)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:420)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:385)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:334)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1318)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1243)
-	at org.testng.TestNG.runSuites(TestNG.java:1161)
-	at org.testng.TestNG.run(TestNG.java:1129)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+        </test-method> <!-- testUserPageNavigation -->
+        <test-method status="PASS" signature="postCondition()[pri:0, instance:com.actitime.tests.UserNavigationTest@1d057a39]" name="postCondition" is-config="true" duration-ms="2109" started-at="2017-10-19T15:16:01Z" finished-at="2017-10-19T15:16:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- postCondition -->
-      </class> <!-- com.actitime.tests.InvalidUserLoginTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- com.actitime.tests.UserNavigationTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

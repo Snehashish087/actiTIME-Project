@@ -2,5 +2,14 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
   <test name="Test">
+    <classes>
+      <class name="com.actitime.tests.CreateUserTest"/>
+      <class name="com.actitime.tests.RegisteredUserTest"/>
+      <class name="com.actitime.tests.UpdatingUserTest"/>
+      <class name="com.actitime.tests.InvalidUserLoginTest"/>
+      <class name="com.actitime.tests.UserNavigationTest"/>
+      <class name="com.actitime.tests.DeleteUserTest"/>
+      <class name="com.actitime.tests.LoginUserTest"/>
+    </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

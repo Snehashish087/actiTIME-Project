@@ -12,7 +12,7 @@ import com.actitime.pages.UserListPage;
 
 public class LoginUserTest extends BaseTest 
 {
-	@Test
+	@Test(enabled=true)
 	public void testLoginUserUpdate()
 	
 	{
@@ -58,23 +58,23 @@ public class LoginUserTest extends BaseTest
 		e.printStackTrace();
 	}
 	//Enter FirstName
-	String UserFName=ExcelData.Data(path, "Sheet3", 7, 3);
+	String UserFName=ExcelData.Data(path, "Sheet3", 9, 3);
 	userListPage.enterUserFirstName(UserFName);
 	//Enter LastName
-	String UserLName=ExcelData.Data(path, "Sheet3", 7, 4);
+	String UserLName=ExcelData.Data(path, "Sheet3", 9, 4);
 	userListPage.enterUserLastName(UserLName);
 	// Enter user's mailID
-	String UserEmail=ExcelData.Data(path, "Sheet3", 7, 5);
+	String UserEmail=ExcelData.Data(path, "Sheet3", 9, 5);
 	userListPage.enterUserEmail(UserEmail);
 	// Enter User's Username
-	String UsersUserName=ExcelData.Data(path, "Sheet3", 7, 6);
+	String UsersUserName=ExcelData.Data(path, "Sheet3", 9, 6);
 	userListPage.enterUsername(UsersUserName);
 	// Enter User's Password
-	String UserPassword=ExcelData.Data(path, "Sheet3", 7, 7);
+	String UserPassword=ExcelData.Data(path, "Sheet3", 9, 7);
 	userListPage.enterUserPassword(UserPassword);
 	
 	//Enter re-Retype Password
-	String RetypePwd=ExcelData.Data(path, "Sheet3", 7, 8);
+	String RetypePwd=ExcelData.Data(path, "Sheet3", 9, 8);
 	userListPage.enterRetypePassword(RetypePwd);
 	
 	//ScrollUsingElement
@@ -94,10 +94,10 @@ public class LoginUserTest extends BaseTest
 	enterTimeTrackPage.clickOnLogout();
 	
 	//Fetch the UserName for the created User
-	String NewUserName=ExcelData.Data(path, "Sheet3", 8, 6);
+	String NewUserName=ExcelData.Data(path, "Sheet3", 10, 6);
 	loginPage.enterUsername(NewUserName);
 	//Fetch the password for the created user
-	String NewPassword=ExcelData.Data(path, "Sheet3", 8, 7);
+	String NewPassword=ExcelData.Data(path, "Sheet3", 10, 7);
 	loginPage.enterPassword(NewPassword);
 	//Click on Login
 	loginPage.clickLogin();

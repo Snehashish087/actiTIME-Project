@@ -3,13 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.actitime.tests.InvalidUserLoginTest">
+      <class name="com.actitime.tests.UpdatingUserTest">
         <methods>
-          <include name="testwithInvalidUserPassword"/>
+          <include name="testUserCreation"/>
+          <include name="testUpdateUserDetails"/>
           <include name="preCondition"/>
           <include name="postCondition"/>
         </methods>
-      </class> <!-- com.actitime.tests.InvalidUserLoginTest -->
+      </class> <!-- com.actitime.tests.UpdatingUserTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -48,23 +48,23 @@ public class UpdatingUserTest extends BaseTest
 				GenericUtils.threadSleep(3000);
 				
 				//Enter FirstName
-				String UserFName=ExcelData.Data(path, "Sheet3", 4, 3);
+				String UserFName=ExcelData.Data(path, "Sheet3", 5, 3);
 				obj3.enterUserFirstName(UserFName);
 				//Enter LastName
-				String UserLName=ExcelData.Data(path, "Sheet3", 4, 4);
+				String UserLName=ExcelData.Data(path, "Sheet3", 5, 4);
 				obj3.enterUserLastName(UserLName);
 				// Enter user's mailID
-				String UserEmail=ExcelData.Data(path, "Sheet3", 4, 5);
+				String UserEmail=ExcelData.Data(path, "Sheet3", 5, 5);
 				obj3.enterUserEmail(UserEmail);
 				// Enter User's Username
-				String UsersUserName=ExcelData.Data(path, "Sheet3", 4, 6);
+				String UsersUserName=ExcelData.Data(path, "Sheet3", 5, 6);
 				obj3.enterUsername(UsersUserName);
 				// Enter User's Password
-				String UserPassword=ExcelData.Data(path, "Sheet3", 4, 7);
+				String UserPassword=ExcelData.Data(path, "Sheet3", 5, 7);
 				obj3.enterUserPassword(UserPassword);
 				
 				//Enter re-Retype Password
-				String RetypePwd=ExcelData.Data(path, "Sheet3", 4, 8);
+				String RetypePwd=ExcelData.Data(path, "Sheet3", 5, 8);
 				obj3.enterRetypePassword(RetypePwd);
 				
 				//ScrollUsingElement
@@ -83,6 +83,7 @@ public class UpdatingUserTest extends BaseTest
 	
 	
 	@Test (dependsOnMethods="testUserCreation")
+	
 	public void testUpdateUserDetails() 
 	{
 		LoginPage obj1=new LoginPage(driver);
@@ -99,35 +100,37 @@ public class UpdatingUserTest extends BaseTest
 				
 				// Click on login
 				obj1.clickLogin();
+				GenericUtils.threadSleep(3000);
 				EnterTimeTrackPage obj2=new EnterTimeTrackPage(driver);
 				
+				GenericUtils.threadSleep(3000);
 				//Click on Users Module
 				obj2.clickOnUsers();
 				
 				//Instance for UserListPage
 				UserListPage obj3=new UserListPage(BaseTest.driver);
 				//Click on the User
-				String UsersName=ExcelData.Data(path, "Sheet3", 4, 3);
+				String UsersName=ExcelData.Data(path, "Sheet3", 5, 3);
 				obj3.editUser(UsersName);
 				//Clear the first name
 				obj3.clearFirstName();
 				//Get the updated name from the excel
-				String UserFName=ExcelData.Data(path, "Sheet3", 5, 3);
+				String UserFName=ExcelData.Data(path, "Sheet3", 6, 3);
 				//Enter the updated Firstname
 				obj3.enterUserFirstName(UserFName);
 				obj3.clearLastName();
-				String UserLName=ExcelData.Data(path, "Sheet3", 5, 4);
+				String UserLName=ExcelData.Data(path, "Sheet3", 6, 4);
 				obj3.enterUserLastName(UserLName);
 				obj3.clearEmailID();
-				String EmailID=ExcelData.Data(path, "Sheet3", 5, 5);
+				String EmailID=ExcelData.Data(path, "Sheet3", 6, 5);
 				obj3.enterUserEmail(EmailID);
-				String UsersUserName=ExcelData.Data(path, "Sheet3", 5, 6);
+				String UsersUserName=ExcelData.Data(path, "Sheet3", 6, 6);
 				obj3.clearUsername();
 				obj3.enterUsername(UsersUserName);
-				String UserPassword=ExcelData.Data(path, "Sheet3", 5, 7);
+				String UserPassword=ExcelData.Data(path, "Sheet3", 6, 7);
 				obj3.clearPassword();
 				obj3.enterUserPassword(UserPassword);
-				String RetypePassword=ExcelData.Data(path, "Sheet3", 5, 8);
+				String RetypePassword=ExcelData.Data(path, "Sheet3", 6, 8);
 				obj3.clearRetypePassword();
 				obj3.enterRetypePassword(RetypePassword);
 				GenericUtils.threadSleep(5000);
@@ -135,7 +138,14 @@ public class UpdatingUserTest extends BaseTest
 				GenericUtils.threadSleep(5000);
 				obj3.clickSaveChanges();
 				GenericUtils.threadSleep(5000);
-				String UpdatedName=ExcelData.Data(path, "Sheet3", 5, 3);
+				
+				
+			
+				//Check for the users Name in the Table for verifying its presence	
+				
+				String UpdatedName=ExcelData.Data(path, "Sheet3", 6, 3);
+				obj3.enterUsersNameSearchBox(UpdatedName);
+				
 				obj3.verifyUpdatedUserName(UpdatedName);
 				GenericUtils.threadSleep(5000);
 				

@@ -11,7 +11,7 @@ import com.actitime.pages.UserListPage;
 
 public class UserNavigationTest extends BaseTest
 {
-	@Test(enabled=false)
+	@Test(enabled=true)
 	public void testUserPageNavigation()
 	{
 	LoginPage obj1=new LoginPage(driver);
@@ -51,23 +51,23 @@ public class UserNavigationTest extends BaseTest
 				e.printStackTrace();
 			}
 			//Enter FirstName
-			String UserFName=ExcelData.Data(path, "Sheet3", 3, 3);
+			String UserFName=ExcelData.Data(path, "Sheet3", 4, 3);
 			obj3.enterUserFirstName(UserFName);
 			//Enter LastName
-			String UserLName=ExcelData.Data(path, "Sheet3", 3, 4);
+			String UserLName=ExcelData.Data(path, "Sheet3", 4, 4);
 			obj3.enterUserLastName(UserLName);
 			// Enter user's mailID
-			String UserEmail=ExcelData.Data(path, "Sheet3", 3, 5);
+			String UserEmail=ExcelData.Data(path, "Sheet3", 4, 5);
 			obj3.enterUserEmail(UserEmail);
 			// Enter User's Username
-			String UsersUserName=ExcelData.Data(path, "Sheet3", 3, 6);
+			String UsersUserName=ExcelData.Data(path, "Sheet3", 4, 6);
 			obj3.enterUsername(UsersUserName);
 			// Enter User's Password
-			String UserPassword=ExcelData.Data(path, "Sheet3", 3, 7);
+			String UserPassword=ExcelData.Data(path, "Sheet3", 4, 7);
 			obj3.enterUserPassword(UserPassword);
 			
 			//Enter re-Retype Password
-			String RetypePwd=ExcelData.Data(path, "Sheet3", 3, 8);
+			String RetypePwd=ExcelData.Data(path, "Sheet3", 4, 8);
 			obj3.enterRetypePassword(RetypePwd);
 			
 			
@@ -75,12 +75,12 @@ public class UserNavigationTest extends BaseTest
 			obj3.ScrollUsingElementRetype();
 			GenericUtils.scrollByAxis(300);
 			
-			//Clear the checkBoxes
-		//	GenericUtils.threadSleep(5000);
+			
+			GenericUtils.threadSleep(5000);
 			
 			//Scroll Using Element
-			//obj3.clickOnCreateUserBtn();
-		//	GenericUtils.threadSleep(5000);
+			obj3.clickOnCreateUserBtn();
+			GenericUtils.threadSleep(5000);
 			
 			GenericUtils.scrollByAxis(-300);
 			obj3.verifyExistingUserMessage();
@@ -91,7 +91,7 @@ public class UserNavigationTest extends BaseTest
 			//To accept the Pop Up
 			GenericUtils.acceptJavascriptPopup();
 			GenericUtils.threadSleep(3000);
-			String ExpectedTitleUsersPage=ExcelData.Data(path, "Sheet3", 3, 2);
+			String ExpectedTitleUsersPage=ExcelData.Data(path, "Sheet3", 4, 2);
 			obj3.verifyTitleUserPage(ExpectedTitleUsersPage);
 	}
 

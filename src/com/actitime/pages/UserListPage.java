@@ -141,6 +141,7 @@ public class UserListPage extends BasePage
 	
 	public void enterUsersNameSearchBox(String UsersName)
 	{
+		UserSearchFilter.clear();
 		UserSearchFilter.sendKeys(UsersName);
 		UserSearchFilter.sendKeys(Keys.ENTER);
 	}

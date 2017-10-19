@@ -14,7 +14,7 @@ import com.actitime.pages.UserListPage;
 public class CreateUserTest extends BaseTest
 {
 
-	@Test (enabled=false)
+	@Test (enabled=true)
 	public void testValidLogin()
 	{
 		
@@ -89,7 +89,7 @@ public class CreateUserTest extends BaseTest
 		obj3.enterUserPassword(UserPassword);
 		
 		//Enter re-Retype Password
-		String RetypePwd=ExcelData.Data(path, "Sheet3", 1, 6);
+		String RetypePwd=ExcelData.Data(path, "Sheet3", 1, 8);
 		obj3.enterRetypePassword(RetypePwd);
 		
 		//ScrollUsingElement
@@ -119,4 +119,4 @@ public class CreateUserTest extends BaseTest
 
 
 
-// This test class has being synched with the test case input....
+// This test class has being synched with the test case input.... Pass
